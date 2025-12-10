@@ -31,7 +31,7 @@ export function CTA() {
                   </div>
                   <div>
                     <p className="text-green-100">Телефон орқали</p>
-                    <p className="text-xl">+998 90 123 45 67</p>
+                    <p className="text-xl">1294</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

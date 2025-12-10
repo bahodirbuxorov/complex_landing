@@ -11,7 +11,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-white mb-4">Алоқа</h4>
-            <p className="mb-2">Телефон: +998 90 123 45 67</p>
+            <p className="mb-2">Телефон: 1294</p>
             <p className="mb-2">Telegram: @nutva_complex</p>
             <p>Email: info@nutvacomplex.uz</p>
           </div>

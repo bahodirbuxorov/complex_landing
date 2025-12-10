@@ -1,25 +1,31 @@
 import { Leaf, Shield, Award, Heart } from 'lucide-react';
+import halalLogo from '../assets/Halal_logo.png';
 
 const benefits = [
   {
     icon: Leaf,
     title: 'Табиий таркиб',
-    description: '100% ўсимлик асосидаги компонентлар, кимёвий қўшимчаларсиз'
+    description: '100% ўсимлик асосидаги компонентлар, кимёвий қўшимчаларсиз',
+    type: 'icon' as const
   },
   {
     icon: Shield,
     title: 'Хавфсиз',
-    description: 'Тиббий текширувлардан ўтган, ёш чеклови йўқ'
+    description: 'Тиббий текширувлардан ўтган, ёш чеклови йўқ',
+    type: 'icon' as const
   },
   {
     icon: Award,
     title: 'Самарали',
-    description: 'Биринчи ойдан кейин натижа кўринади'
+    description: 'Биринчи ойдан кейин натижа кўринади',
+    type: 'icon' as const
   },
   {
     icon: Heart,
     title: 'Халол сертификатли',
-    description: 'Халқаро сифат стандартларига мос'
+    description: 'Халқаро сифат стандартларига мос',
+    type: 'image' as const,
+    image: halalLogo
   }
 ];
 
@@ -42,7 +48,11 @@ export function Benefits() {
               className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                <benefit.icon className="w-8 h-8 text-green-600" />
+                {benefit.type === 'image' ? (
+                  <img src={benefit.image} alt={benefit.title} className="w-10 h-10 object-contain" />
+                ) : (
+                  <benefit.icon className="w-8 h-8 text-green-600" />
+                )}
               </div>
               <h3 className="text-xl text-gray-900 mb-2">{benefit.title}</h3>
               <p className="text-gray-600">{benefit.description}</p>
