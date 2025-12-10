@@ -25,7 +25,7 @@ export function CTA() {
                 >
                   Буюртма бериш
                 </button>
-                <div className="flex items-center gap-3">
+                <a href="tel:1294" className="flex items-center gap-3 hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <div className="bg-white/20 p-3 rounded-lg">
                     <Phone className="w-6 h-6" />
                   </div>
@@ -33,16 +33,16 @@ export function CTA() {
                     <p className="text-green-100">Телефон орқали</p>
                     <p className="text-xl">1294</p>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
+                </a>
+                <a href="https://t.me/nutvauz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <div className="bg-white/20 p-3 rounded-lg">
                     <MessageCircle className="w-6 h-6" />
                   </div>
                   <div>
                     <p className="text-green-100">Telegram орқали</p>
-                    <p className="text-xl">@nutva_complex</p>
+                    <p className="text-xl">@nutvauz</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="space-y-2">
                 <p className="flex items-center gap-2">

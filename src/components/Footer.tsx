@@ -11,9 +11,9 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-white mb-4">Алоқа</h4>
-            <p className="mb-2">Телефон: 1294</p>
-            <p className="mb-2">Telegram: @nutva_complex</p>
-            <p>Email: info@nutvacomplex.uz</p>
+            <p className="mb-2">Телефон: <a href="tel:1294" className="hover:text-green-400 transition-colors">1294</a></p>
+            <p className="mb-2">Telegram: <a href="https://t.me/nutvauz" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">@nutvauz</a></p>
+            <p>Email: <a href="mailto:info@nutvacomplex.uz" className="hover:text-green-400 transition-colors">info@nutvacomplex.uz</a></p>
           </div>
           <div>
             <h4 className="text-white mb-4">Маълумот</h4>
